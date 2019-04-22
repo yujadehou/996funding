@@ -43,7 +43,7 @@
 
 * **确定数量**：确定bancor算法的重要参数，存入一定量的ETH进入储备金池（connector balance），存入一定量的996.token供给（supply)
 
-![](%E4%B8%BA996%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81%E6%8D%90%E6%AC%BE%E6%A8%A1%E5%9E%8B/DABD094D-D0C7-42CF-A214-14CB7EFEBD79.png)
+![](https://github.com/yujadehou/996funding/blob/master/image/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-22%20%E4%B8%8B%E5%8D%885.45.14.png)
 
 Bancor协议可以实现更多复杂的数学设计及应用场景。在这里，我们设定CW=100%=1，以保证捐款是一个没有投机的行为。那么存入储备金池的ETH，实际上就是在给996.token定价。
 
@@ -53,7 +53,7 @@ Bancor协议可以实现更多复杂的数学设计及应用场景。在这里�
 
 为什么设定CW=1呢？因为只有在CW=1的情况下，随着捐款数量（supply）的变化，token的价格才会保持不变。
 
-![](%E4%B8%BA996%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81%E6%8D%90%E6%AC%BE%E6%A8%A1%E5%9E%8B/8DE0F358-C697-46E0-AD9A-052A33A33C55.png)
+![](https://github.com/yujadehou/996funding/blob/master/image/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-22%20%E4%B8%8B%E5%8D%885.45.24.png)
 
 
 * **接受捐款**：捐款者直接把ETH存入连接器中，并以上面参数设定的比例兑换处996的token。现在，与传统的捐款模型最大的区别来了：
@@ -102,11 +102,11 @@ _这个模型是好处是什么呢？_
 当CW<100%的时候，连接器的定价变成了杠杆机制，随着捐款（supply）的增多，价格会越来越高。而如果更多人卖出，supply下降，价格会再次回落。
 
 举个栗子，假设996目前有一个特殊的项目需要捐款。项目发起人A，社区参与者B，捐款者C。A自己在最早期投入1个ETH，获得100个996.token。C1投入1ETH获得80个996.token。A组织了10位B开始了这项活动，每位志愿者分得5个token，B总共分得50个token。C2继续为活动赞助了3 ETH获得120个token。此时，A可以兑现手中剩余的token换回最开始投入的1ETH，B也可以选择兑换。
-![](%E4%B8%BA996%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81%E6%8D%90%E6%AC%BE%E6%A8%A1%E5%9E%8B/63F6D9D7-DB81-4E1B-BE8A-8F51DCD0DD86.png)
+![](https://github.com/yujadehou/996funding/blob/master/image/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-22%20%E4%B8%8B%E5%8D%885.45.33.png)
 
 曲线也可以是这样的：
 
-![](%E4%B8%BA996%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81%E6%8D%90%E6%AC%BE%E6%A8%A1%E5%9E%8B/D9515D36-1A4A-4BC8-BCF2-029CDB79C100.png)
+![](https://github.com/yujadehou/996funding/blob/master/image/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-22%20%E4%B8%8B%E5%8D%885.45.39.png)
 右图的二级函数既能激励早期参与者和捐款者，又能避免后来者的投机心理。
 
 这种更复杂的设计的好处是可以让整个社区不单纯依赖外部捐款，而变成了自组织，早期贡献者和捐款者都得到了激励。坏处是复杂，而且可能引入动机不纯的投机行为，污染整个社区。
